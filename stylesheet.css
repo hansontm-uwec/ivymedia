@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    padding: 1rem;
+}
+.homephoto1{
+    width: 100%;
+}
+.kyle{
+    width: 375px;
+    justify-content: center;
+}
+.aboutus{
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: .5rem;
+}
+.kyleinfo{
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: .5rem;
+}
+.quote{
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: .5rem;
+}
+.website{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+.kyleinfo a:hover{
+    background-color: grey;
+}
+.hamburger{
+    width: 40px;
+    padding: .5rem;
+}
+.hamburger hr{
+    margin: .75rem 0;
+    border-width: 2px;
+    border-style: solid;
+    color: #fff;
+}
+header nav a{
+    display: block;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid #fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+header .show{
+    left: 0;
+}
+header nav{
+    transition:left 1s ease-in-out;
+    top: 6.5rem;
+    position: absolute;
+    left: -100%;
+    font-size: 1.5rem;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    top: 4.75rem;
+    position: fixed;
+    background-color: #0b132b99;
+    transition: left 1s ease-in-out;
+    left: -100%;
+}
+.overlay.show{
+    left: 0;
+}
+main{
+    margin-top: 5rem;
+}
+.logo{
+    height: 100px;
+}
+.gallery{
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: 1rem;
+    justify-content: center;
+}
+.galleryphoto{
+    width: calc(100%);
+    margin-bottom: 10px;
+}
+.video{
+    width: 100%;
+}
+.musicvideo{
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.project1{
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.project2{
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.projectphoto{
+    width: 100%;
+    max-width: 500px;
+}
+.studiophoto{
+    width: 100%;
+    max-width: 800px;
+    padding-top: 2rem;
+}
+form{
+    background-color: #00000080;
+    padding-top: .1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.contact{
+    font-size: 1.5rem;
+}
+form h3{
+    font-size: 2rem;
+}
+label, input[type=text], [type=email], textarea{
+    display: block;
+    margin: .5rem 0;
+}
+input[type=text], [type=email], textarea{
+    width: 95%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 1px solid transparent;
+}
+input[type=submit]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 3px solid rgb(41, 41, 41);
+    margin: 0 2rem 0 0;
+}
+textarea{
+    height: 5rem;
+    width: 96%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0b132b;
+}
+input:focus[type=text], input:focus[type=email], textarea:focus{
+    outline: none;
+    border: 1px solid #420e0c;
+}
+@media(min-width: 1200px){
+    .quote{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        font-size: x-large;
+        text-align: center;
+    }
+    .homephoto1{
+        width: 350px;
+    }
+    .home-ex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .aboutkyle{
+        display: flex;
+    }
+    .galleryphoto{
+        width: 33%;
+    }
+    .video{
+        width: 800px;
+        height: 450px;
+        display: block;
+        margin: auto;
+    }
+    .musicvideo{
+       text-align: center;
+    }
+    .projectphoto{
+        max-width: 500px;
+    }
+    .projectdetails{
+        display: block;
+        margin-left: 2rem;
+    }
+    .project1{
+        display: flex;
+        margin: auto;
+    }
+    .project2{
+        display: flex;
+        margin: auto;
+    }
+    .kyleinfo{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: auto auto auto;
+    }
+    .name{
+        grid-area: 1/1/2/2;
+    }
+    .website{
+        grid-area: 3/1/4/2;
+        width: 80px;
+        background-color: grey;
+        margin: 1rem;
+    }
+    .aboutkyle{
+        grid-area: 2/2/3/3;
+    }
+    .kyle{
+        grid-area: 2/1/3/2;
+    }
+    .hours{
+        font-size: x-large;
+        text-align: center;
+    }
+    .contact{
+        width: 70%;
+        margin: auto;
+    }
+    .studio{
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        margin: auto;
+    }
+}
